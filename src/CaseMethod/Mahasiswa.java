@@ -11,8 +11,8 @@ public class Mahasiswa {
     void tampilMahasiswa(){
         System.out.println("Daftar Mahasiswa: ");
         for (int i = 0; i < NIM.length; i++) {
-            System.out.println("NIM: "+NIM[i]+"\t|\t"+ "Nama: " + nama[i]+"\t|\t"+"Prodi: "+prodi[i]);
+            System.out.println("NIM: "+NIM[i]+"\t|"+ "Nama: " + nama[i]+"\t|"+"Prodi: "+prodi[i]);
         }
     }  
-    
+
 }
