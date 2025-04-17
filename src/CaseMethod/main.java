@@ -3,6 +3,9 @@ import java.util.Scanner;
 public class main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        Mahasiswa mhs = new Mahasiswa();
+        MataKuliah mk = new MataKuliah();
+        Penilaian p = new Penilaian();
         
         while (true) {
             System.out.println("=== MENU SISTEM AKADEMIK ===");
@@ -17,18 +20,14 @@ public class main {
 
             switch (pilihMenu) {
                 case 1:
-                    System.out.println("Daftar Mahasiswa : " );
-
+                    mhs.tampilMahasiswa();
                     break;
                 case 2:
-                    System.out.println("Daftar Mata Kuliah : ");
-                    for (MataKuliah mk : MataKuliah.daftarMK) {
-                        mk.tampilMatakuliah();
-                    }
+                    mk.tampilMatakuliah();
                     break;
                 case 3:
                     System.out.println("Data Penilaian : ");
-
+                    p.tampilPenilaian();
                     break;
                 case 4:
                     System.out.println("Data Penilaian : ");
@@ -39,8 +38,11 @@ public class main {
 
                     break;
                 case 0:
-
+                    System.out.println("Keluar dari program");
+                    sc.close();
+                    return;
                 default:
+                    System.out.println("Pilihan Tidak Valid");
             }
         }
     }

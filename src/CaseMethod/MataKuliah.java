@@ -1,22 +1,17 @@
 package CaseMethod;
 public class MataKuliah {
-        String kodeMK;
-        String namaMK;
-        int sks;
-    
-        static MataKuliah[] daftarMK = {
-            new MataKuliah("MK001", "Struktur Data", 3),
-            new MataKuliah("MK002", "Basis Data", 3),
-            new MataKuliah("MK003", "Desain Web", 3)
-        };
-    
-        public MataKuliah(String kodeMK, String namaMK, int sks) {
-            this.kodeMK = kodeMK;
-            this.namaMK = namaMK;
-            this.sks = sks;
+        String kodeMK[]= {"MK001", "MK002", "MK003"};
+        String namaMK[]= {"Struktur Data", "Basis Data", "Desain Web"};
+        int sks []={3, 3, 3};
+        
+        MataKuliah(){
+
         }
     
-        public void tampilMatakuliah() {
-            System.out.println("Kode MK: " + kodeMK + " | Nama: " + namaMK + " | SKS: " + sks);
+        void tampilMatakuliah() {
+            System.out.println("Daftar Mata Kuliah: ");
+            for (int i = 0; i < kodeMK.length; i++) {
+            System.out.println("Kode MK: "+kodeMK[i]+"\t|"+ "Nama: " + namaMK[i]+"\t|"+"SKS: "+sks[i]);
+            }
         }
 }
