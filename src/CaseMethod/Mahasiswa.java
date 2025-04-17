@@ -14,4 +14,5 @@ public class Mahasiswa {
             System.out.println("NIM: "+NIM[i]+"\t|\t"+ "Nama: " + nama[i]+"\t|\t"+"Prodi: "+prodi[i]);
         }
     }  
+    
 }
