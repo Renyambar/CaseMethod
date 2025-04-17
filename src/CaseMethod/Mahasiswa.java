@@ -1,18 +1,17 @@
 package CaseMethod;
 public class Mahasiswa {
-    String NIM[]={"22001", "22002", "22003"};
-    String nama[]={"Ali Rahman", "Budi Santoso", "Citra Dewi"};
-    String prodi[]={"Informatika", "Informatika", "Informatika"};
-
-    public Mahasiswa(){
-
+    String NIM;
+    String nama;
+    String prodi;
+    
+    public Mahasiswa(String NIM, String nama, String prodi) {
+        this.NIM = NIM;
+        this.nama = nama;
+        this.prodi = prodi;
     }
-
-    void tampilMahasiswa(){
-        System.out.println("Daftar Mahasiswa: ");
-        for (int i = 0; i < NIM.length; i++) {
-            System.out.println("NIM: "+NIM[i]+"\t|"+ "Nama: " + nama[i]+"\t|"+"Prodi: "+prodi[i]);
-        }
-    }  
-
+    
+    public void tampilMahasiswa() {
+        System.out.println("NIM: " + NIM + " | Nama: " + nama + " | Prodi: " + prodi);
+    }
 }
+    
