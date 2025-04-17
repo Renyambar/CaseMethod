@@ -13,7 +13,5 @@ public class Mahasiswa {
         for (int i = 0; i < NIM.length; i++) {
             System.out.println("NIM: "+NIM[i]+"\t|\t"+ "Nama: " + nama[i]+"\t|\t"+"Prodi: "+prodi[i]);
         }
-    }
-    
-    
+    }  
 }
